@@ -24,7 +24,7 @@ def load_lottieurl(url):
 lottie_coding = load_lottieurl("https://lottie.host/4c7a6fa5-b30c-43e9-b786-892054d4c643/zri4P9qmdW.json")
 
 # --- Load image for resizing ---
-img_contact_from = Image.open("image\sn.jpg")  # Fixed path
+img_contact_from = Image.open("image/sn.jpg")  # Fixed path
 
 # Resize the image by 30%
 width, height = img_contact_from.size
@@ -101,13 +101,13 @@ col1, col2, col3, col4 = st.columns(4)  # Creating four equal columns
 
 with col1:
     st.subheader("South Indian Dishes")
-    south_indian_image = Image.open("image\south indian.jpg")
+    south_indian_image = Image.open("image/south indian.jpg")
     st.image(south_indian_image, caption="Authentic South Indian Dishes", width=300)
     st.write("From crispy dosas to flavorful sambar, we bring you the essence of South India with every bite.")
 
 with col2:
     st.subheader("Chinese Dishes")
-    chinese_image = Image.open("image\chineese.jpg")
+    chinese_image = Image.open("image/chineese.jpg")
     st.image(chinese_image, caption="Delicious Chinese Dishes", width=300)
     st.write("Indulge in the finest Chinese dishes, crafted to perfection for your event.")
 
@@ -119,7 +119,7 @@ with col3:
 
 with col4:
     st.subheader("Continental Dishes")
-    continental_image = Image.open("image\continental.jpg")
+    continental_image = Image.open("image/continental.jpg")
     st.image(continental_image, caption="Exquisite Continental Dishes", width=300)
     st.write("Enjoy a sophisticated selection of continental dishes, from pastas to seafood.")
 
